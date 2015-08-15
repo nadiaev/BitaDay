@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- bootstrap add -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- bootstrap add -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoVSoKOuJ98K63Lurwnf0k_HB7WxphJfk"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body onload="initializeSeeNote()">
+        <header class="modal-header">
+            <h1>BitaDay</h1> 
+            <a type="button" class="btn btn-success btn-large" id="share" onclick="messageOrMessageAndImage()">Compartir</a>
+            <a type="button" class="btn btn-link btn-large" id="back" href="index.html">Volver</a>
+        </header>
+        <div id="container">
+            <div id="fecha-hora">
+                <div id="fecha"></div><div id="address"></div>
+            </div> 
+            <div id="nota"></div>
+
+            <h2>Ubicacion</h2>
+         
+            <div id="map_canvas" style="width:500px; height:500px"></div>
+        </div>
+        <footer class="modal-footer">
+            <center><button type="button" class="btn btn-danger btn-large" id="delete" onclick="eliminarNota()">Eliminar</button></center>
+        </footer>
+    </body>
+</html>

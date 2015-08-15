@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoVSoKOuJ98K63Lurwnf0k_HB7WxphJfk"></script>
+    </head>
+    <body onload="initializeSeeNote()">
+        <header>
+        <center><h1>BITACORA</h1></center> 
+            <div id="aline">
+                <div class="izq">
+                    <a class="btn" href="index.html">Volver</a>
+                </div>
+                <div class="der"><a class="btn btn-success" id="save" onClick="messageOrMessageAndImage()">Compartir</a>
+                </div>
+            </div>
+        </header>
+        <div id="contenedorNota">
+            <div id="nota">
+            </div>
+
+            <center><h2>Ubicacion</h2></center> 
+         
+            <div id="map_canvas" style="width:500px; height:500px"></div>
+
+        </div>
+        <center><button class="btn btn-warning" id="delete" onclick="eliminarNota()">Eliminar</button></center>
+    </body>
+</html>

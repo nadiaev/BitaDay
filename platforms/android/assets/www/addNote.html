@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoVSoKOuJ98K63Lurwnf0k_HB7WxphJfk"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body onload="initializeAddNote()">
+        <header>
+            <center><h1>Bitacora</h1></center>
+            <a class="btn" id="volver" href="index.html">Volver</a>
+        </header>
+        <div id="cantenedorNota">
+            <div id="lugar"></div>
+            <textarea id="inputNote" maxlength="200" placeholder="Nota..." autofocus></textarea>
+            <img id="smallImage" src="">
+            <button class="btn btn-info" id="capture" onclick="capturePhoto()">Camara</button>
+           <center><button class="btn btn-info btn-large" id="save" onclick="saveNote()">Guardar</button></center>
+        </div>
+    </body>
+</html>

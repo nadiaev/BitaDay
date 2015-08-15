@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- bootstrap add -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- bootstrap add -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoVSoKOuJ98K63Lurwnf0k_HB7WxphJfk"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body onload="initializeAddNote()">
+        <header class="modal-header">
+            <h1>BitaDay</h1>
+            <a role="button" class="btn btn-link btn-large" id="back" onclick="window.history.back();">Volver</a>
+        </header>
+        <div id="container">
+            <textarea class="form-control" id="inputNote" placeholder="Nota..." onkeyup="contador()" autofocus></textarea>
+            <span id="cantidad">200</span>
+            <img class="img-responsive" id="smallImage" src="">
+        </div>
+        <footer class="modal-footer">
+            <button class="btn btn-info btn-large btn-block" id="capture" onclick="capturePhoto()">Camara</button>
+            <button type="button" class="btn btn-info btn-large btn-block" id="save" onclick="saveNote()" disabled="disabled">Guardar</button>
+        </footer>
+    </body>
+</html>

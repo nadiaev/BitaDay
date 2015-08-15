@@ -1,0 +1,54 @@
+/
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+#smallImage {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+#largeImage {
+    display: block;
+    width: 90%;
+    height: 200px;
+}
+
+textarea {
+    width: 90%;
+    height: 70px;
+}
+
+#save button {
+    width: 90%;
+    height: 50px; 
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    float: right;
+}
+
+#aline {
+    display: inline;
+    margin-left: 5px;
+    overflow: hidden;
+}
+.izq{
+    float: left;
+}
+.der{
+    float: right;
+}
